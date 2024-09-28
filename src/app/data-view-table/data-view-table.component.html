@@ -1,0 +1,26 @@
+<mat-table [dataSource]="dataSource">
+
+    <ng-container matColumnDef="title">
+        <mat-header-cell *matHeaderCellDef> Title </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.title}} </mat-cell>
+    </ng-container>
+
+
+    <ng-container matColumnDef="website">
+        <mat-header-cell *matHeaderCellDef> Website </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.website}} </mat-cell>
+    </ng-container>
+
+
+    <ng-container matColumnDef="address">
+        <mat-header-cell *matHeaderCellDef> Address </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.address}} </mat-cell>
+    </ng-container>
+
+
+    <mat-header-row *matHeaderRowDef="['title', 'website', 'address']"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: ['title', 'website', 'address']" (click)="RowClick(row)"></mat-row>
+</mat-table>
+<mat-paginator [pageSizeOptions]="[10, 15, 20, 50]"
+               aria-label="Select page of periodic elements">
+</mat-paginator>

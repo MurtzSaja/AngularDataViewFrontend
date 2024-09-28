@@ -1,0 +1,2 @@
+D:\AngularProjects\DataViewFrontend\obj\Debug\DataViewFrontend.esproj.CoreCompileInputs.cache
+D:\GitProjects\AngularDataViewFrontend\obj\Debug\DataViewFrontend.esproj.CoreCompileInputs.cache
