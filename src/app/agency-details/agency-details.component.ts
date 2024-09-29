@@ -7,7 +7,6 @@ import { MatList } from '@angular/material/list'
   selector: 'app-agency-details',
   templateUrl: './agency-details.component.html',
   styleUrl: './agency-details.component.css',
-  providers: [DataFetcherService],
 })
 export class AgencyDetailsComponent {
 
